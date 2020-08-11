@@ -1,0 +1,92 @@
+body {
+  margin-top: 0;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  max-height: 100vh;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 11fr;
+      grid-template-columns: 2fr 11fr;
+}
+
+.grid .sidenav {
+  border-right: solid 1px black;
+  height: 100vh;
+}
+
+.grid .sidenav .sidenav__item {
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.grid .sidenav a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid .sidenav a:hover {
+  text-decoration: none;
+  color: #25dd0d;
+}
+
+.grid .sidenav .sidenav__item--popup {
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.grid .sidenav .sidenav__item--popup a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid .sidenav .sidenav__item--popup a:hover {
+  text-decoration: none;
+  color: #25dd0d;
+}
+
+.grid .sidenav .sidenav__item--popup a::after {
+  content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vel similique nobis?";
+  display: none;
+  color: black;
+}
+
+.grid .sidenav .sidenav__item--popup a:focus::after {
+  content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vel similique nobis?";
+  display: block;
+  position: absolute;
+  left: 95px;
+  border: solid 1px black;
+  max-width: 120px;
+}
+
+.grid .grid__wrap .topnav {
+  padding: 20px;
+}
+
+.grid .grid__wrap .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.grid .grid__wrap .body .body__form div {
+  padding-bottom: 40px;
+}
+
+.grid .grid__wrap .topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=Homepage.css.map */

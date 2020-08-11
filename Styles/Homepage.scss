@@ -1,0 +1,112 @@
+body {
+    margin-top: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    max-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 11fr;
+   
+    
+    .sidenav {
+        border-right: solid 1px black;
+        height: 100vh;
+
+        .sidenav__item {
+            padding-bottom: 20px;
+            list-style: none;
+        }
+        
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+
+        & a:hover {
+            text-decoration: none;
+            color: rgb(37, 221, 13);
+        }
+
+        .sidenav__item--popup {
+            padding-bottom: 20px;
+            list-style: none;
+        }
+
+        .sidenav__item--popup a {
+            text-decoration: none;
+            color: black;
+        }
+
+        
+        .sidenav__item--popup a:hover {
+            text-decoration: none;
+            color: rgb(37, 221, 13);
+        }
+        
+        // used the Psuedo element to pass the content of the dropdown. Set the display to none
+        .sidenav__item--popup a::after {
+            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vel similique nobis?";
+            display: none;
+            color: rgb(0, 0, 0);
+        }
+
+        // used the Psuedo class of focus. set the display back to block
+        .sidenav__item--popup a:focus::after {
+            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vel similique nobis?";
+            display: block;
+            position: absolute;
+            left: 95px;
+            border: solid 1px black;
+            max-width: 120px;
+        }
+
+    //     a div {
+    //         border: 1px solid black;
+    //         position: absolute;
+    //         width: 100px;
+    //         visibility: hidden;
+           
+    //     }
+
+    //     a:focus div {
+    //         border: 1px solid black;
+    //         position: absolute;
+    //         width: 150px;
+    //         left: 95px;
+    //         visibility: visible;
+           
+    //     }
+        
+    }
+
+
+
+    .grid__wrap {
+       
+        .topnav {
+
+            padding: 20px;
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px ;
+
+            .body__form div {
+                padding-bottom: 40px;
+            }
+        }
+    
+        .topnav {
+            display: flex;
+            border: solid 1px black;
+            justify-content: space-between;
+        
+        }
+    }
+
+   
+
+}
+
