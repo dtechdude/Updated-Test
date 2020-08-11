@@ -9,6 +9,7 @@ body {
   display: grid;
   -ms-grid-columns: 2fr 11fr;
       grid-template-columns: 2fr 11fr;
+  /* styling sidenav */
 }
 
 .grid .sidenav {
